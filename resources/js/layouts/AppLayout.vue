@@ -1,18 +1,27 @@
-<script setup lang="ts">
-import AppLayout from '@/layouts/app/AppSidebarLayout.vue';
-import type { BreadcrumbItemType } from '@/types';
+<template>
+    <div class="hidden xl:block">
+        <headerDesktop />
+    </div>
+    <div class="block xl:hidden">
+        <HeaderMobile />
+    </div>
+    <slot />
+</template>
 
-interface Props {
-    breadcrumbs?: BreadcrumbItemType[];
-}
+<script>
+import headerDesktop from '@/components/header-desktop.vue';
+import HeaderMobile from '@/components/header-mobile.vue';
 
-withDefaults(defineProps<Props>(), {
-    breadcrumbs: () => [],
-});
+export default {
+    name: 'layout',
+    components: {
+        headerDesktop,
+        HeaderMobile,
+    },
+    data() {
+        return {};
+    },
+};
 </script>
 
-<template>
-    <AppLayout :breadcrumbs="breadcrumbs">
-        <slot />
-    </AppLayout>
-</template>
+<style></style>
