@@ -8,6 +8,6 @@ export default {};
 
 <style>
 .home-background {
-    background-image: url('../../images/ville-saint-honore.jpg');
+    background-image: url('/public/images/ville-saint-honore.jpg');
 }
 </style>

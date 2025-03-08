@@ -4,7 +4,7 @@
             <div className="h-[11vh] w-1/5 flex items-center">
                 <div class="h-[90%]">
                     <a href="/">
-                        <img class="h-[100%]" src="../../images/logo.png" alt="Logo" />
+                        <img class="h-[100%]" src="../../../public/images/logo.png" alt="Logo" />
                     </a>
                 </div>
             </div>
