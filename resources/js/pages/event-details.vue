@@ -12,12 +12,12 @@
         </div>
         <div class="flex w-full flex-col items-center justify-center">
             <h1 class="w-full border-b-2 border-solid border-black pb-10 text-center text-6xl">{{ event.title }}</h1>
-            <div class="flex">
-                <button @click="previousImage">&lt;</button>
-                <div class="mt-[5vh] w-[60%]">
+            <div class="mt-[5vh] flex items-center justify-center">
+                <div class="triangle triangle-left border-blue" @click="previousImage"></div>
+                <div class="w-[60%]">
                     <img :src="currentImage" />
                 </div>
-                <button @click="nextImage">&gt;</button>
+                <div class="triangle triangle-right border-blue" @click="nextImage"></div>
             </div>
         </div>
     </div>
@@ -50,4 +50,29 @@ export default {
     },
 };
 </script>
-<style lang=""></style>
+<style lang="css">
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    margin: 0 10px;
+}
+
+.triangle:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.triangle-right {
+    /* border-left: 50px solid; */
+    border-left-width: 50px;
+    border-left-style: solid;
+}
+
+.triangle-left {
+    /* border-right: 50px solid; */
+    border-right-width: 50px;
+    border-right-style: solid;
+}
+</style>
