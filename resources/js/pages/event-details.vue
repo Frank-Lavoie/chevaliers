@@ -5,7 +5,7 @@
                 <img :src="event.cover_image" />
             </div>
             <div class="mt-[5vh] flex w-full flex-col text-2xl">
-                <p>Où ? - {{ event.location }}</p>
+                <p>Où ? - {{ event.location + ' ' + event.time }}</p>
                 <p>Quand ? - {{ event.date }}</p>
                 <p>Pourquoi ? - {{ event.reason }}</p>
             </div>

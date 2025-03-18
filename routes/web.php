@@ -22,5 +22,12 @@ Route::get('evenements',
 Route::get('evenement/{id}',
     [EventController::class, 'get_event_details_route'])->name('event-details');
 
+
+
+// Admin
+Route::get('admin/ajouter-evenements', function () {
+    return Inertia::render('add-event');
+})->name('add-event-page');
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
