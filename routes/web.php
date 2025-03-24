@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\RoomReservationController;
 
 Route::get('/', function () {
     return Inertia::render('home');
@@ -12,9 +13,8 @@ Route::get('a-propos', function () {
     return Inertia::render('about');
 })->name('about');
 
-Route::get('salle-chevaliers', function () {
-    return Inertia::render('room-reservation');
-})->name('room-reservation');
+Route::get('salle-chevaliers',
+    [RoomReservationController::class, 'room_reservation_page'])->name('room_reservation_page');
 
 Route::get('evenements', 
     [EventController::class, 'get_events_route'])->name('events');

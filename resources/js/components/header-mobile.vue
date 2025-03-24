@@ -25,12 +25,12 @@
     </header>
     <div v-if="isExpanded" class="absolute top-[12vh] flex h-[88vh] w-full items-center justify-center bg-blue">
         <nav class="flex h-1/2 flex-col items-center justify-around">
-            <a className="mx-3 text-white text-xl" href="/"> Accueil </a>
-            <a className="mx-3 text-white text-xl" href="/evenements"> Nos évènements </a>
-            <a className="mx-3 text-white text-xl" href="/a-propos"> À propos de nous </a>
+            <a className="mx-3 text-white text-3xl" href="/"> Accueil </a>
+            <a className="mx-3 text-white text-3xl" href="/evenements"> Nos évènements </a>
+            <a className="mx-3 text-white text-3xl" href="/a-propos"> À propos de nous </a>
             <div className="w-full flex justify-end">
                 <a href="/salle-chevaliers">
-                    <button className="bg-white text-black text-xl p-5 rounded-full border-transparent border-solid border-4 hover:border-black">
+                    <button className="bg-white text-black text-2xl p-5 rounded-full border-transparent border-solid border-4 hover:border-black">
                         Réserver notre salle
                     </button>
                 </a>

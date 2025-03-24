@@ -9,13 +9,13 @@
                 </div>
             </div>
             <nav>
-                <a className="mx-3 text-white text-xl" href="/"> Accueil </a>
-                <a className="mx-3 text-white text-xl" href="/evenements"> Nos évènements </a>
-                <a className="mx-3 text-white text-xl" href="/a-propos"> À propos de nous </a>
+                <a className="mx-3 text-white text-3xl" href="/"> Accueil </a>
+                <a className="mx-3 text-white text-3xl" href="/evenements"> Nos évènements </a>
+                <a className="mx-3 text-white text-3xl" href="/a-propos"> À propos de nous </a>
             </nav>
             <div className="w-1/5 flex justify-end">
                 <a href="/salle-chevaliers">
-                    <button className="bg-white text-black text-xl p-5 rounded-full border-transparent border-solid border-4 hover:border-black">
+                    <button className="bg-white text-black text-2xl p-5 rounded-full border-transparent border-solid border-4 hover:border-black">
                         Réserver notre salle
                     </button>
                 </a>
