@@ -23,7 +23,7 @@ const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
     resolve: async (name) => {
-        const page = (await import(`./Pages/${name}.vue`)).default;
+        const page = (await import(`./pages/${name}.vue`)).default;
         page.layout ??= AppLayout; // Définir un layout global par défaut
         return page;
     },
